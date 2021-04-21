@@ -14,7 +14,7 @@ export default function allowMethods(...methods: HttpMethod[]): RequestHandler {
 
 	for (const method of set)
 		if (!knownMethods.has(method))
-			throw new Error(`Unknown HTTP method encountered: "${method}")`);
+			throw new Error(`Unknown HTTP method encountered: "${method}"`);
 
 	const headers = {
 		Allow: Array.from(set),
