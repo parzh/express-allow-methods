@@ -1,9 +1,6 @@
 import type { RequestHandler } from "express";
 import type HttpMethod from "./http-method.type";
-import methods from "./methods";
-
-/** @private */
-const knownMethods = new Set(methods);
+import knownMethods from "./methods";
 
 // TODO: export default function allowMethods(...methods: HttpMethod[]): RequestHandler;
 
