@@ -1,9 +1,9 @@
 import type { RequestHandler } from "express";
 import type HttpMethod from "./http-method.type";
 import knownMethods from "./methods";
+import hint from "./hint.impl";
 
 // TODO: export default function allowMethods(...methods: HttpMethod[]): RequestHandler;
-
 // TODO: export default function allowMethods(config: AllowMethodsConfig): RequestHandler;
 
 export default function allowMethods(...methods: HttpMethod[]): RequestHandler {
@@ -11,7 +11,7 @@ export default function allowMethods(...methods: HttpMethod[]): RequestHandler {
 
 	for (const method of set)
 		if (!knownMethods.has(method))
-			throw new Error(`Unknown HTTP method encountered: "${method}"`);
+			throw new Error(`Unknown HTTP method encountered: "${method}"` + hint(method));
 
 	const headers = {
 		Allow: Array.from(set),
