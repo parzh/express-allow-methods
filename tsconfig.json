@@ -7,10 +7,11 @@
     "declaration": true,
     "inlineSources": true,
     "sourceMap": true,
+    "composite": true,
+    "rootDir": "src", // needed if "composite" is true
 
     // Development
     "strict": true,
-    "composite": true,
     "downlevelIteration": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

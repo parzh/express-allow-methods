@@ -37,7 +37,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "del-cli dist/*",
     "build": "tsc",
     "postbuild": "del-cli dist/**/*.type.js* dist/**/*.impl.d.ts"
   },
