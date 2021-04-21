@@ -1,9 +1,35 @@
 {
   "name": "express-allow-methods",
   "version": "0.0.1",
-  "license": "UNLICENSED",
-  "keywords": [],
-  "private": true,
+  "description": "Express middleware for sending HTTP 405 Method Not Allowed response",
+  "author": "Dima Parzhitsky <parzhitsky@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "express",
+    "middleware",
+    "http",
+    "response",
+    "405",
+    "method",
+    "not",
+    "allowed",
+    "helper",
+    "util"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parzh/express-allow-methods.git"
+  },
+  "bugs": {
+    "url": "https://github.com/parzh/express-allow-methods/issues"
+  },
+  "homepage": "https://github.com/parzh/express-allow-methods#readme",
+  "files": [
+    "/dist",
+    "!/dist/**/*.type.js",
+    "!/dist/**/*.impl.d.ts",
+    "/README.md"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
