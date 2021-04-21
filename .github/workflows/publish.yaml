@@ -36,11 +36,11 @@ jobs:
           fi
 
   test:
-    if: "false" # TODO: remove when tests are there
     name: Run tests
     runs-on: ubuntu-20.04
     needs:
       - check-version-match
+      - check-version-new
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -52,7 +52,8 @@ jobs:
   publish:
     name: Publish this version
     runs-on: ubuntu-20.04
-    # needs: [test] # TODO: add when tests are there
+    needs:
+      - test
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
