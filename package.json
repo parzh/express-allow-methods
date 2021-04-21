@@ -38,6 +38,9 @@
     "build": "tsc",
     "postbuild": "del-cli dist/**/*.type.js* dist/**/*.impl.d.ts"
   },
+  "dependencies": {
+    "@types/express": "4.17.11"
+  },
   "devDependencies": {
     "@types/node": "14.14.41",
     "del-cli": "3.0.1",
