@@ -1,7 +1,4 @@
 {
-  "ts-node": {
-    "files": true,
-  },
   "compilerOptions": {
     // Output
     "target": "es2015",
