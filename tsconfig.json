@@ -10,6 +10,7 @@
 
     // Development
     "strict": true,
+    "composite": true,
     "downlevelIteration": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
