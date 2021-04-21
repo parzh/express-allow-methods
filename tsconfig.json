@@ -1,13 +1,23 @@
 {
+  "ts-node": {
+    "files": true,
+  },
   "compilerOptions": {
+    // Output
     "target": "es2015",
     "module": "commonjs",
     "outDir": "dist",
+    "declaration": true,
+    "inlineSources": true,
+    "sourceMap": true,
+
+    // Development
+    "strict": true,
     "downlevelIteration": true,
     "esModuleInterop": true,
-
-    "strict": true,
-    "noUnusedLocals": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-  }
+    "resolveJsonModule": true,
+    "importsNotUsedAsValues": "error",
+  },
 }
