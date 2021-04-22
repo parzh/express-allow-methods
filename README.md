@@ -3,7 +3,7 @@
 Express middleware for sending [`HTTP 405 Method Not Allowed`](https://httpstatuses.com/405) response. Due to the specification requirements, it also responds with the `Allow` header with comma-separated list of allowed methods.
 
 <center>
-![Package demo using cUrl terminal command](./demo.gif)
+	<img src="demo.gif" alt="Package demo using cUrl terminal command" />
 </center>
 
 ## Prerequisites
