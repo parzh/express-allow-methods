@@ -37,11 +37,7 @@ jobs:
 
   test:
     name: Run tests
-    if: "false"
     runs-on: ubuntu-20.04
-    needs:
-      - check-version-match
-      - check-version-new
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -53,8 +49,10 @@ jobs:
   publish:
     name: Publish this version
     runs-on: ubuntu-20.04
-    # needs:
-      # - test
+    needs:
+      - check-version-match
+      - check-version-new
+      # TODO: - tests
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
