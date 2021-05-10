@@ -3,6 +3,8 @@ import type HttpMethod from "./http-method.type";
 import knownMethods from "./methods";
 import hint from "./hint.impl";
 
+export { default as HttpMethod } from "./http-method.type";
+
 // TODO: export default function allowMethods(...methods: HttpMethod[]): RequestHandler;
 // TODO: export default function allowMethods(config: AllowMethodsConfig): RequestHandler;
 
