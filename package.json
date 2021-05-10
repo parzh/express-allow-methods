@@ -1,6 +1,6 @@
 {
   "name": "express-allow-methods",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Express middleware for sending HTTP 405 Method Not Allowed response",
   "author": "Dima Parzhitsky <parzhitsky@gmail.com>",
   "license": "MIT",
