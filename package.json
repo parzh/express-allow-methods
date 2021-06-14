@@ -50,7 +50,7 @@
     "typescript": "4.3.2"
   },
   "peerDependencies": {
-    "express": "*",
-    "typescript": ">=3.8.2"
+    "express": "4 || 5",
+    "typescript": ">=4.1"
   }
 }

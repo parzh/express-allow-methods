@@ -5,6 +5,11 @@ import hint from "./hint.impl";
 
 export { default as HttpMethod } from "./http-method.type";
 
+/** @deprecated Use `HttpMethod` instead */
+export type NodeHttpMethod = HttpMethod;
+
+export { default as ExpressHttpMethod } from "./express-http-method.type";
+
 // TODO: export default function allowMethods(...methods: HttpMethod[]): RequestHandler;
 // TODO: export default function allowMethods(config: AllowMethodsConfig): RequestHandler;
 
